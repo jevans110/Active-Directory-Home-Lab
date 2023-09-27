@@ -5,11 +5,11 @@
 
 <h2>Description</h2>
 I used VirtualBox to setup an Active Directory environment. I created a Server and Client virtual machine, configured AD, DHCP and NAT, and joined the Client machine to the domain. I used a powershell script to create multiple users and logged into the Client machine with those users. 
-<br />
+<br/>
 I had to troubleshoot issues along the way, starting with actually getting the VMs to work by changing the BIOS settings on my host machine to allow virtualization. I then ran into issues with the Server OS installation and had to increase the drive space I had allocated to the VM. When preparing for the Client machine, I had to download a Windows 10 ISO, but Microsoft would only give me access to the Media Creation tool. To get the ISO, I used Chrome's developer tools to set my user agent as a blackberry OS, which prompted Microsoft to offer the ISO download. Finally, upon joining the Client to the domain, I found that I was not connecting to the internet because my network settings had a typo.
-<br />
+<br/>
 Upon completing setup, I implemented a few security policies. I reduced IP lease times to 2 hours from 8 days. I set up password policies requiring 10 characters and complexity including upper and lowercase letters, numbers and special characters. Finally, I set user passwords to reset on next login and configured them to expire every 60 days.
-<br />
+<br/>
 
 
 <h2>Languages and Utilities Used</h2>
@@ -29,8 +29,8 @@ Upon completing setup, I implemented a few security policies. I reduced IP lease
 <p align="center">
 Launch VirtualBox: <br/>
 <img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
+<br/>
+<br/>
 Create Server VM:  <br/>
 <img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
